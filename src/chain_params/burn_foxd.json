@@ -1,0 +1,12 @@
+{
+    "main": {"FDissueAssetXXXXXXXXXXXXXXXXarpEmt": 500},
+    "sub": {"FDissueSubAssetXXXXXXXXXXXXXW6D3dn": 100},
+    "unique": {"FDissueUniqueAssetXXXXXXXXXXSkWCDd": 5},
+    "restricted": {"FDissueRestrictedXXXXXXXXXXXXveZHA": 1500},
+    "message": {"FDissueMsgChanneLAssetXXXXXXSkQjob": 100},
+    "reissue": {"FDReissueAssetXXXXXXXXXXXXXXZAKPbJ": 100},
+    "qualifier": {"FDissueQuaLifierXXXXXXXXXXXXZVc7zN": 1000},
+    "sub_qualifier": {"FDissueSubQuaLifierXXXXXXXXXUhKn5T": 100},
+    "tag": {"FDaddTagBurnXXXXXXXXXXXXXXXXaqLzue": 0.1},
+    "burn": "FDBurnXXXXXXXXXXXXXXXXXXXXXXWdW4er"
+}

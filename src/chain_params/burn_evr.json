@@ -1,0 +1,12 @@
+{
+    "main": {"EXissueAssetXXXXXXXXXXXXXXXXYiYRBD": 500},
+    "sub": {"EXissueSubAssetXXXXXXXXXXXXXWW1ASo": 100},
+    "unique": {"EXissueUniqueAssetXXXXXXXXXXTZjZJ5": 5},
+    "restricted": {"EXissueRestrictedXXXXXXXXXXXZZMynb": 1500},
+    "message": {"EXissueMsgChanneLAssetXXXXXXXD3mRa": 100},
+    "reissue": {"EXReissueAssetXXXXXXXXXXXXXXY1ANQH": 100},
+    "qualifier": {"EXissueQuaLifierXXXXXXXXXXXXW5Zxyf ": 1000},
+    "sub_qualifier": {"EXissueSubQuaLifierXXXXXXXXXUgTjtu": 100},
+    "tag": {"EXaddTagBurnXXXXXXXXXXXXXXXXb5HLXh": 0.1},
+    "burn": "EXBurnXXXXXXXXXXXXXXXXXXXXXXZ8ZjfN"
+}

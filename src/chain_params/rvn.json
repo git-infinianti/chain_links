@@ -1,0 +1,50 @@
+{
+    "common": {
+        "name": "Ravencoin",
+        "unit": "RVN",
+        "decimal_places": 1e8,
+        "message_prefix": "Raven Signed Message:\n"
+    },
+    "main": {
+        "hash_genesis_block": "0000006b444bc2f2ffe627be9d9e7e7a0730000870ef6eb6da46c8eae389df90",
+        "port": 8767,
+        "rpc_port": 8766,
+        "protocol": {
+            "magic": "0x4e564152"
+        },
+        "seeds_dns": [
+            "seed-raven.bitactivate.com",
+            "seed-raven.ravencoin.com",
+            "seed-raven.ravencoin.org"
+        ],
+        "versions": {
+            "bip32": {
+                "private": "0x0488ade4",
+                "public": "0x0488b21e"
+            },
+            "bip44": 175,
+            "private": "0x80",
+            "public": "0x3c",
+            "scripthash": "0x7a"
+        }
+    },
+    "test": {
+        "hash_genesis_block": "0000007b11d04800000044bc03f8460e64bc07b080f4929b1cb96fda46b8bd806e57bfb9db82f41b2420a7c656ef76775d54ab5b29ee7ea250bc768535693b05",
+        "port": 18820,
+        "rpc_port": 18819,
+        "protocol": {
+            "magic": "0x54525645"
+        },
+        "seeds_dns": ["seed-testnet-evr.evrmorecoin.org"],
+        "versions": {
+            "bip32": {
+                "private": "0x04358394",
+                "public": "0x043587cf"
+            },
+            "bip44": 175,
+            "private": "0xef",
+            "public": "0x6f",
+            "scripthash": "0xc4"
+        }
+    }
+}

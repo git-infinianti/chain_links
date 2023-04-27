@@ -1,0 +1,12 @@
+{
+    "main": {"RXissueAssetXXXXXXXXXXXXXXXXXhhZGt": 500},
+    "sub": {"RXissueSubAssetXXXXXXXXXXXXXWcwhwL": 100},
+    "unique": {"RXissueUniqueAssetXXXXXXXXXXWEAe58": 5},
+    "restricted": {"RXissueRestrictedXXXXXXXXXXXXzJZ1q": 1500},
+    "message": {"RXissueMsgChanneLAssetXXXXXXSjHvAY": 100},
+    "reissue": {"RXReissueAssetXXXXXXXXXXXXXXVEFAWu": 100},
+    "qualifier": {"RXissueQuaLifierXXXXXXXXXXXXUgEDbC": 1000},
+    "sub_qualifier": {"RXissueSubQuaLifierXXXXXXXXXVTzvv5": 100},
+    "tag": {"RXaddTagBurnXXXXXXXXXXXXXXXXZQm5ya": 0.1},
+    "burn": "RXBurnXXXXXXXXXXXXXXXXXXXXXXWUo9FV"
+}
