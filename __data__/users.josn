@@ -1,1 +1,82 @@
-{}
+{
+  "user1": {
+    "accounts": [
+      [
+        {
+          "addresses": {
+            "p2pkh": "",
+            "p2sh": "",
+            "p2wpkh": "",
+            "p2wpkh_in_p2sh": "",
+            "p2wsh": "",
+            "p2wsh_in_p2sh": ""
+          },
+          "wif": ""
+        },
+        {
+          "addresses": {
+            "p2pkh": "",
+            "p2sh": "",
+            "p2wpkh": "",
+            "p2wpkh_in_p2sh": "",
+            "p2wsh": "",
+            "p2wsh_in_p2sh": ""
+          },
+          "wif": ""
+        }
+      ],
+      [
+        {
+          "addresses": {
+            "p2pkh": "",
+            "p2sh": "",
+            "p2wpkh": "",
+            "p2wpkh_in_p2sh": "",
+            "p2wsh": "",
+            "p2wsh_in_p2sh": ""
+          },
+          "wif": ""
+      ]
+    ]
+  },
+  "user2": {
+    "accounts": [
+      [
+        {
+          "addresses": {
+            "p2pkh": "",
+            "p2sh": "",
+            "p2wpkh": "",
+            "p2wpkh_in_p2sh": "",
+            "p2wsh": "",
+            "p2wsh_in_p2sh": ""
+          },
+          "wif": ""
+        },
+        {
+          "addresses": {
+            "p2pkh": "",
+            "p2sh": "",
+            "p2wpkh": "",
+            "p2wpkh_in_p2sh": "",
+            "p2wsh": "",
+            "p2wsh_in_p2sh": ""
+          },
+          "wif": ""
+        }
+      ],
+      [
+        {
+          "addresses": {
+            "p2pkh": "",
+            "p2sh": "",
+            "p2wpkh": "",
+            "p2wpkh_in_p2sh": "",
+            "p2wsh": "",
+            "p2wsh_in_p2sh": ""
+          },
+          "wif": ""
+      ]
+    ]
+  }
+}
