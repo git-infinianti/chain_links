@@ -31,24 +31,19 @@ class MData14:
 			'sell_price': sell_price, 
 			'curreny': curreny
 		}
-		_other = other
-		_attachments = attachments
-		_recipients = recipients
 		_encryption = {
 			'algorithm': algorithm, 
-			'attachments': _attachments, 
-			'recipients': _recipients
+			'attachments': attachments, 
+			'recipients': recipients
 		}
-		_ipfs = ipfs
-		_url = url
 		self.metadata = {
 			'asset_data': _asset, 
 			'admin_data': _admin, 
-			'sell_data' :_sell, 
-			'other_data': _other, 
+			'sell_data' : _sell, 
+			'other_data': other, 
 			'encryption': _encryption, 
-			'ipfs_cids': _ipfs,
-			'url_links': _url
+			'ipfs_cids': ipfs,
+			'url_links': url
 		}
 		self.signed_metadata = sign(self.metadata)
 
