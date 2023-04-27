@@ -1,13 +1,7 @@
 /.env
 /.vs
 /.vscode
-__data__/mnemonic.json
-__data__/settings.json
-__data__/users.json
-__data__/users.josn
-__data__/credentials.json
 chain_links/chain_links/__pycache__/__init__.cpython-310.pyc
-__data__/__pycache__/__init__.cpython-310.pyc
 chain_links/chain_links/__pycache__/settings.cpython-310.pyc
 chain_links/chain_links/__pycache__/urls.cpython-310.pyc
 chain_links/chain_links/__pycache__/wsgi.cpython-310.pyc
@@ -17,6 +11,7 @@ chain_links/links/__pycache__/apps.cpython-310.pyc
 chain_links/links/__pycache__/models.cpython-310.pyc
 chain_links/links/__pycache__/views.cpython-310.pyc
 chain_links/links/migrations/__pycache__/__init__.cpython-310.pyc
+__data__/__pycache__/__init__.cpython-310.pyc
 src/__pycache__/wallet.cpython-310.pyc
 src/__pycache__/rvn_rpc.cpython-310.pyc
 src/__pycache__/symbols.cpython-310.pyc
