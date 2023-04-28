@@ -27,7 +27,6 @@
     "estimatefee",
     "estimatesmartfee",
     "expire_time",
-    "expire_time",
     "freezeaddress",
     "freezerestrictedasset",
     "fundrawtransaction",
@@ -75,7 +74,6 @@
     "getunconfirmedbalance",
     "getverifierstring",
     "getwalletinfo",
-    "gross_distribution_amount",
     "gross_distribution_amount",
     "help",
     "importaddress",
@@ -153,5 +151,5 @@
     "viewallmessagechannels",
     "viewallmessages",
     "viewmyrestrictedaddresses",
-    "viewmytaggedaddresses"
+    "viewmytaggedaddresse"
 ]
