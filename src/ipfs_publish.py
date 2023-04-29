@@ -1,6 +1,6 @@
 from json import dump
 from ipfs_api import pin, publish
-from src.rip.utils import encoding
+from src.rips.utils import encoding
 
 
 class PublishMData:

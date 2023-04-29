@@ -1,21 +1,21 @@
-from requests import post
+from requests import post, Session
 from src.chain_params import commands
 
 class RPC:
     def __init__(self, username, password, port) -> None:
-        self.__call__: function = lambda method, parameters: post(
+        self.id = 0
+        self.__call__: function = lambda method, parameters: Session().post(
             f'http://localhost:{port}', 
             json = {
             'jsonrpc': '1.0',
-            'id': 'python',
+            'id': self.id,
             'method': method,
             'params': parameters,
             }, 
             auth = (username, password)
         ).json()['result']
-
     def __call__(self, method: str, *args) -> dict: # type: ignore
-        return self.__call__(method, list(args))
+        self.id+=1; return self.__call__(method, list(args))
     
     def __getattr__(self, method: str):
         def command(*args): return self.__call__(method, list(args))

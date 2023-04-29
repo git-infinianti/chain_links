@@ -3,7 +3,7 @@ from os.path import abspath, join
 from base64 import urlsafe_b64encode
 # pip installed imports
 from requests import get
-from src.rip.utils import gpg, hdir
+from src.rips.utils import gpg, hdir
 
 
 img_fdir = abspath('images')

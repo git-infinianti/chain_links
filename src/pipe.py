@@ -2,7 +2,7 @@ from os import cpu_count
 from json import loads
 from typing import Any, Iterable
 from subprocess import run, PIPE
-from concurrent.futures import ThreadPoolExecutor as thrdplex
+from concurrent.futures import ThreadPoolExecutor
 
 
 APP_EXEC = 'H:\\BlockchainDB\\foxd\\Foxdcoin\\daemon\\foxdcoin-cli.exe'
@@ -23,9 +23,9 @@ def rpc_call(method: str, *args: Any) -> dict[str, Any] | None:
     else: return loads(ret)
 
 
-def thread(method: str, *args):
-    with thrdplex(cpu_count()) as tpe: return tpe.submit(rpc_call, method, *args)
+def thread(method: str, *args: Any):
+    with ThreadPoolExecutor(cpu_count()) as tpe: return tpe.submit(rpc_call, method, *args)
 
 
-def multi_thread(methods: Iterable[str], *args: Any):
-    with thrdplex(cpu_count()) as tpe: return tpe.map(rpc_call, methods, args)
+def multi_thread(method: str, *args: Any):
+    with ThreadPoolExecutor(cpu_count()) as tpe: return tpe.map(lambda p: rpc_call(method, p), args)
