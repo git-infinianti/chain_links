@@ -1,5 +1,5 @@
 {
-  "user1": {
+  "user.0": {
     "accounts": [
       [
         {
@@ -40,7 +40,7 @@
       ]
     ]
   },
-  "user2": {
+  "user.1": {
     "accounts": [
       [
         {

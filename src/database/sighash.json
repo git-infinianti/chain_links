@@ -2,7 +2,7 @@
     "all": "ALL",
     "none": "NONE",
     "single": "SINGLE",
-    "anyone_can_pay": {
+    "anyone": {
         "all": "ALL|ANYONECANPAY",
         "none": "NONE|ANYONECANPAY",
         "single": "SINGLE|ANYONECANPAY"
