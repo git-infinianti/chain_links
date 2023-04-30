@@ -1,5 +1,5 @@
 from requests import post, Session
-from src.database.params import commands
+from src.Database.params import commands
 
 class Call:
     def __init__(self, username, password, port) -> None:

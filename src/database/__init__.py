@@ -6,7 +6,7 @@ from typing import Any
 
 
 def main() -> None:
-    fdir, ftype = r'src\database', 'json'
+    fdir, ftype = r'src\Database', 'json'
     path = Path.absolute(Path(fdir))
     vars = [f.split('.')[0] for f in listdir(path) if ftype in f]
     for var in vars: 
