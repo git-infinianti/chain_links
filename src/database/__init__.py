@@ -6,7 +6,7 @@ from typing import Any
 
 
 def main() -> None:
-    fdir, ftype = '__data__', 'json'
+    fdir, ftype = r'src\database', 'json'
     path = Path.absolute(Path(fdir))
     vars = [f.split('.')[0] for f in listdir(path) if ftype in f]
     for var in vars: 
@@ -16,7 +16,7 @@ users: dict[str, Any]
 credentials: dict[str, Any]
 settings: dict[str, Any]
 sighash: dict[str, Any]
-mnemonic: list[Any]
+mnemonic: dict[str, list[str]]
 main()
 
 if __name__ == '__main__':

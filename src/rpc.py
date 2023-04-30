@@ -1,7 +1,7 @@
 from requests import post, Session
-from src.chain_params import commands
+from src.database.params import commands
 
-class RPC:
+class Call:
     def __init__(self, username, password, port) -> None:
         self.id = 0
         self.__call__: function = lambda method, parameters: Session().post(
@@ -24,7 +24,7 @@ class RPC:
     def __dir__(self): return commands
     
 
-def get_address_utxos(rpc: RPC, addresses: list, 
+def get_address_utxos(rpc: Call, addresses: list, 
     chain_info: bool | None=None, asset_name: str | None=None
     ):
     payload = {
@@ -37,15 +37,15 @@ def get_address_utxos(rpc: RPC, addresses: list,
     return rpc.getaddressutxos(payload)
 
 
-def create_raw_transaction(rpc: RPC, inputs: list, outputs: dict, 
+def create_raw_transaction(rpc: Call, inputs: list, outputs: dict, 
         locktime: int | None=None
     ) -> str:
     return rpc.createrawtransaction(inputs, outputs, locktime)
 
 
-def sign_message(rpc: RPC, wif: str, message: str) -> str: 
+def sign_message(rpc: Call, wif: str, message: str) -> str: 
     return rpc.signmessagewithprivkey(wif, message)
 
 
-def verify_message(rpc: RPC, address: str, signature: str, message: str) -> bool: 
+def verify_message(rpc: Call, address: str, signature: str, message: str) -> bool: 
     return rpc.verifymessage(address, signature, message)

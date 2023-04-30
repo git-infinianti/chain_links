@@ -7,7 +7,7 @@ from pathlib import Path
 
 
 def main() -> None:
-    fdir, ftype = 'src/chain_params', 'json'
+    fdir, ftype = r'src\database\\params', 'json'
     path = Path.absolute(Path(fdir))
     vars = [f.split('.')[0] for f in listdir(path) if ftype in f]
     for var in vars:
