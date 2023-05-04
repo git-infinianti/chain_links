@@ -1,11 +1,1 @@
-.vs
-.vscode
-.idea
 .env
-src/__pycache__
-src/rips/__pycache__
-src/database/__pycache__
-src/database/params/__pycache__
-src/django/chain_links/links/__pycache__
-src/django/chain_links/links/migrations/__pycache__
-src/django/chain_links/chain_links/__pycache__

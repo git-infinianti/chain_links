@@ -163,12 +163,12 @@ if __name__ == '__main__':
     from os import getenv
     from dotenv import load_dotenv
     load_dotenv()
+    acc = 4
     mnem = str(getenv('MNEM'))
     sftwrV = 'Foxdcoin v1.1.0.1-9db505f-dirty'
     rpc = Call(getenv('RPCUSER'), getenv('RPCPASS'), 8770)
     coreDump = CoreWalletDump(sftwrV, 'FOXD', rpc, mnem)
     coreDump.bip44 = True
-    acc = 4
     coreDump.filename = f'account-{acc}'
     coreDump.accountIndex = acc
     dumpData = coreDump.wallet_dumps(100)

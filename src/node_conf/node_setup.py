@@ -17,16 +17,16 @@ def get_default_path():
         return join(home, f'.{chain}')
     elif operating_system is platform[1]:
         return join(home, 'Library', 'Application', 'Support', Chain)
-    else: return join(home, 'AppData', 'Roaming', Chain)
+    return join(home, 'AppData', 'Roaming', Chain)
 
 
 default_path = get_default_path()
 
 
 def generate_conf(
-    testnet: int=None, regtest: int=None, proxy: ip=None, bind: ip=None, whitebind: ip=None, nodes: ips=None, connections: ips=None, listen=1, maxconnections: int=None,           # type: ignore
-    server: int=1, rpcbinds: ips=None, authentications: list[str]=None, rpcuser: str='user', rpcpassword: str='pass', rpcclienttimeout=30, rpcallowedips: list=['127.0.0.1'],      # type: ignore
-    zmqpub: str=None, rpcport: int=8766, wallet: str=default_path, datadir: str=default_path, rpcconnect: ip='127.0.0.1', txconfirmtarget=6, keypool=100, paytxfee: float=None,    # type: ignore
+    testnet: int=None, regtest: int=None, proxy: ip=None, bind: ip=None, whitebind: ip=None, nodes: ips=None, connections: ips=None, listen=1, maxconnections: int=None, # type: ignore
+    server: int=1, rpcbinds: ips=None, authentications: list[str]=None, rpcuser: str='user', rpcpassword: str='pass', rpcclienttimeout=30, rpcallowedips: list=['127.0.0.1'], # type: ignore
+    zmqpub: str=None, rpcport: int=8766, wallet: str=default_path, datadir: str=default_path, rpcconnect: ip='127.0.0.1', txconfirmtarget=6, keypool=100, paytxfee: float=None, # type: ignore
     prune: int=0, minimized=0, totray=1, txindex=1, addressindex=1, assetindex=1, timestampindex=1, spentindex=1 
 ):
     testnet = testnet if testnet else 0
@@ -36,7 +36,7 @@ def generate_conf(
     whitebind = f'whitebind={whitebind}\n' if whitebind else f'#whitebind=\n'
     addnode = [f'addnode={node}\n' for node in nodes] if nodes else '#addnode=\n'
     connect = [f'connect={connection}\n' for connection in connections] if connections else '#connect=\n'
-    maxconnections = f'maxconnections={maxconnections}\n' if maxconnections else '#maxconnections=\n'                                                                              # type: ignore
+    maxconnections = f'maxconnections={maxconnections}\n' if maxconnections else '#maxconnections=\n' # type: ignore
     rpcbind = [f'rpcbind={bind}\n' for bind in rpcbinds] if rpcbinds else '#rpcbind=\n'
     rpcauth = [f'rpcauth={auth}\n' for auth in authentications] if authentications else '#rpcauth=\n'
     rpcallowip = [f'rpcallowip={rpcallowip}\n' for rpcallowip in rpcallowedips]
@@ -45,7 +45,7 @@ def generate_conf(
     zmqpubrawblock = f'zmqpubrawblock={node_ip}\n' if node_ip else f'#zmqpubrawblock=\n'
     zmqpubhashtx = f'zmqpubhashtx={node_ip}\n' if node_ip else '#zmqpubhashtx=\n'
     zmqpubhashblock = f'zmqpubhashblock={node_ip}\n' if node_ip else '#zmqpubhashblock=\n'
-    paytxfee = f'paytxfee={paytxfee}\n' if paytxfee else '#paytxfee=\n'                                                                                                            # type: ignore
+    paytxfee = f'paytxfee={paytxfee}\n' if paytxfee else '#paytxfee=\n' # type: ignore
 
 
     with open(join(default_path, f'{chain}.conf'), 'w') as file:
