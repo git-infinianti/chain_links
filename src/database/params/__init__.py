@@ -6,13 +6,17 @@ from typing import Any
 from pathlib import Path
 
 
-def main() -> None:
+def main():
     fdir, ftype = r'src\Database\\params', 'json'
     path = Path.absolute(Path(fdir))
     vars = [f.split('.')[0] for f in listdir(path) if ftype in f]
+    __all__ = vars
     for var in vars:
         with open(abspath(f'{fdir}/{var}.{ftype}'), 'r') as f:
             exec(f'{var} = {load(f)}', globals())
+    return vars
+
+
 commands: dict[str, Any]
 evr: dict[str, Any]
 burn_evr: dict[str, Any]
@@ -21,6 +25,7 @@ burn_foxd: dict[str, Any]
 rvn: dict[str, Any]
 burn_rvn: dict[str, Any]
 main()
+
 
 if __name__ == '__main__':
     main()

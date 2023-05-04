@@ -24,8 +24,8 @@
     <![endif]-->
     <h4>
       <ul>
-        {% for i in utxos %}
-        <li>{{i}}</li>
+        {% for key, value in utxos.items %}
+        <li>{{key}} {{value}}</li>
         {% endfor %}
       </ul>
     </h4>

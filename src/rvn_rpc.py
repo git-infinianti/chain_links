@@ -9,7 +9,7 @@ async def get_data(*args, **kwargs):
         if testing: url = 'https://rvn-rpc-testnet.ting.finance/rpc'
         else: url = 'https://rvn-rpc-mainnet.ting.finance/rpc'
         return url
-    return result if (r := 'result') in (result := post(get_url(), json=make_payload()).json()[r]) else result
+    return result if (r := 'result') in (result := post(get_url(), json=make_payload()).json()[r]) else {result}
 
 
 def get_address_balance(*args, **kwargs):

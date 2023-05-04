@@ -19,6 +19,7 @@ class DispatchRPC:
         self.num_workers = workers
         self.limit = limit
         self.total = 0
+
         def __call__(method, *args):
             url = f'http://localhost:{port}'
             json = {'jsonrpc': '1.0', 'id': 'python', 'method': method, 'params': args}

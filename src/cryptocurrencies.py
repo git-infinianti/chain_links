@@ -1,5 +1,6 @@
 from hdwallet.cryptocurrencies import *
 
+
 class Ravencoin(RavencoinMainnet):
     SEGWIT_ADDRESS = SegwitAddress({
         "HRP": "ra",

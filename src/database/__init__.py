@@ -9,9 +9,12 @@ def main() -> None:
     fdir, ftype = r'src\Database', 'json'
     path = Path.absolute(Path(fdir))
     vars = [f.split('.')[0] for f in listdir(path) if ftype in f]
+    __all__ = vars
     for var in vars: 
         with open(Path.absolute(Path(f'{fdir}/{var}.{ftype}')), 'r') as f: 
             exec(f'{var} = {load(f)}', globals())
+
+
 users: dict[str, Any]
 credentials: dict[str, Any]
 settings: dict[str, Any]

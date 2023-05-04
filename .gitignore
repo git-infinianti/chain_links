@@ -1,5 +1,6 @@
 .vs
 .vscode
+.idea
 .env
 src/__pycache__
 src/rips/__pycache__
